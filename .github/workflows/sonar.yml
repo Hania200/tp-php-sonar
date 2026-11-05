@@ -20,7 +20,7 @@ jobs:
         run: composer install --no-progress --prefer-dist
       - name: Run tests
         run: vendor/bin/phpunit --coverage-clover=coverage.xml || true
-              - name: Setup Java 21
+      - name: Setup Java 21
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
